@@ -1,47 +1,46 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="styles/cadastro.css">
-
+    <link rel="stylesheet" href="styles/style.css" />
 </head>
 
 <body>
+
     <form class="formulario">
-        <img src="https://logosmarcas.net/wp-content/uploads/2020/04/Instagram-Logo.png" alt="Logo do instagram"
-            alt="logo instagran">
-        <p>Cadastre-se para ver fotos e videos de seus amigos.</p>
+        <img src="https://freelogopng.com/images/all_img/1658587303instagram-png.png" alt="Logo do instagram"
+            width="120px" />
+
+        <p>Cadastre-se para ver fotos e videos de seus amigo.</p>
 
         <div class="input-area">
-            <input type="text" id="campo-nome-completo" placeholder="Nome completo">
+            <input id="campo-nome-completo" type="text" placeholder="Nome Completo" />
             <span id="error-nome" class="texto-erro" hidden></span>
         </div>
 
         <div class="input-area">
-            <input type="email" id="campo-cadastro-email" placeholder="Email">
+            <input id="campo-email" type="text" placeholder="Email" />
             <span id="error-email" class="texto-erro" hidden></span>
         </div>
 
         <div class="input-area">
-            <input type="tel" id="campo-cadastro-telefone" placeholder="Telefone">
-            <span id="error-telefone" class="texto-erro" hidden></span>
+            <input id="campo-telefone" type="tel" placeholder="Telefone" />
+            <span id="error-telefone" class="texto-erro"></span>
         </div>
 
-        <div class="input-area">
-            <input type="text" id="campo-cadastro-nome-usuario" placeholder="Apelido">
-            <span id="error-apelido" class="texto-erro" hidden></span>
-        </div>
+        <input type="text" placeholder="Nome do usuário" />
 
         <div class="input-area">
-            <input type="password" id="campo-cadastro-senha" placeholder="Senha">
+            <input id="campo-senha" type="password" placeholder="Senha" />
             <span id="error-senha" class="texto-erro" hidden></span>
         </div>
 
-        <button id="cadastro-button" type="button" onclick="fazerCadastro()">Fazer cadastro</button>
+        <button id="login-button" type="button" onclick="fazerCadastro()">Entrar</button>
     </form>
+
     <script src="scripts/cadastro.js"></script>
 </body>
 
